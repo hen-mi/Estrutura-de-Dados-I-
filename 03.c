@@ -1,21 +1,24 @@
 #include <stdio.h>
 
-void copia(char *string, char *ondecopiar) {
+#define TAMANHO 20
 
- for(int i = 0; ondecopiar[i] != '\0'; i++) {
+char* copia(char *string, char *ondecopiar) {
+  int i;
+ for(i = 0; ondecopiar[i] != '\0'; i++) {
   ondecopiar[i] = string[i];
-
  }
 
+return ondecopiar;
 }
 
 int main() {
  //teste
 char a[] = "palavra";
   printf("%s\n", a);
-char b[20] = "copiar aqui";
+char b[TAMANHO] = "copiar aqui";
   printf("%s\n", b);
-copia(a,b);
-  printf("%s\n", b);
+  printf("%s\n", copia(a,b));
+ 
+
   return 0;
 }

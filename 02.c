@@ -3,8 +3,8 @@
 void MaiorMenor(int *vet, int tamVet, int *a, int *b) {
 
 int menor = 0, maior = 0;
-
-for(int i = 0; i <= tamVet; i++) {
+int i;
+for(i = 0; i <= tamVet; i++) {
 
 if(i == 0) {
 menor = vet[i];
