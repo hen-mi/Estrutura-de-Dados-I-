@@ -16,8 +16,7 @@ void inserir(LISTA* lista, int valor);
 void remover(LISTA* lista);
 void copiaLista(LISTA* lista, LISTA* lista2); //copialista invertida como desafio
 
-int main
-() {
+int main () {
 
   LISTA minhalista;
   minhalista.fim = NULL;
